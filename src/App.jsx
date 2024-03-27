@@ -38,7 +38,8 @@ const BgImg = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(${sidebardesk});
+  /* background-image: url(${sidebardesk}); */
+  background-image: url(sidebardesk);
 
   @media (max-width: 991.98px) {
     align-items: center;
