@@ -23,12 +23,9 @@ const Card = styled.div`
   height: auto;
   background-color:hsl(0, 0%, 100%);
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     padding: 0;
     width: 100%;
-  }
-
-  @media (max-width: 575.97px) {
   }
 `
 
@@ -44,8 +41,9 @@ const BgImg = styled.div`
   background-image: url(${sidebardesk});
 
   @media (max-width: 991.98px) {
+    align-items: center;
     width: 100%;
-    height: 30svh;
+    height: 25svh;
     border-radius: 0;
     background-image: url(${sidebarmobile});
   }
@@ -61,12 +59,17 @@ const FormsCont = styled.div`
   justify-content: space-between;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    margin-right: 1rem;
-    width: 87.5%;
-    height: 55svh;
+    padding: 2.5rem 0;
+    margin: 0;
+    width: 80%;
+    height: 60svh;
   }
 
   @media (max-width: 575.97px) {
+    padding: 1rem 0;
+    margin: 0;
+    width: 90%;
+    height: 65svh;
   }
 `
 

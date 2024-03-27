@@ -31,6 +31,15 @@ const Circle = styled.button`
   background-color: ${props => props.$active ? 'hsl(217, 100%, 97%)' : 'transparent'};
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 `
 
@@ -38,12 +47,20 @@ const Title = styled.h1`
   line-height: 1;
   font-size: 0.725rem;
   color: hsl(229, 24%, 87%);
+
+  @media (max-width: 991.98px) {
+   display: none;
+  }
 `
 
 const Subtitle = styled.h2`
   font-weight: bold;
   font-size: 0.825rem;
   color: hsl(0, 0%, 100%);
+
+  @media (max-width: 991.98px) {
+   display: none;
+  }
 `
 
 const StepsButtons = ({ handleStepChange, currentStep }) => {
