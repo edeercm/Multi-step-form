@@ -8,7 +8,6 @@ import Summary from './components/StepFour/Summary'
 import StepsNavBtns from './components/StepsNavBtns'
 import sidebardesk from '../src/assets/images/sidebar-desk.svg'
 import sidebarmobile from '../src/assets/images/sidebar-mobile.svg'
-import bgdesk from '../src/assets/images/sidebar-desk.svg'
 import './App.css'
 
 const Section = styled.section`
@@ -38,8 +37,8 @@ const BgImg = styled.div`
   border-radius: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background: url(${bgdesk});
+  /* background-position: center; */
+  background: url(${sidebardesk});
 
   @media (max-width: 991.98px) {
     align-items: center;
