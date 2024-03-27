@@ -38,14 +38,14 @@ const BgImg = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background: url(${sidebardesk});
+  background-image: url(${sidebardesk});
 
   @media (max-width: 991.98px) {
     align-items: center;
     width: 100%;
     height: 25svh;
     border-radius: 0;
-    background: url(${sidebarmobile});
+    background-image: url(${sidebarmobile});
   }
 `
 
