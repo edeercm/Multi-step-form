@@ -39,7 +39,7 @@ const BgImg = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   /* background-image: url(${sidebardesk}); */
-  background-image: url(sidebardesk);
+  background-image: url('src/assets/images/sidebar-desktop.svg');
 
   @media (max-width: 991.98px) {
     align-items: center;
