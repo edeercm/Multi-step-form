@@ -39,7 +39,7 @@ const BgImg = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(${bgdesk});
+  background: url(${bgdesk});
 
   @media (max-width: 991.98px) {
     align-items: center;
