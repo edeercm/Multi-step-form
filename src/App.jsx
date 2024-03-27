@@ -38,7 +38,7 @@ const BgImg = styled.div`
   border-radius: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-image: url(${bgdesk});
 
   @media (max-width: 991.98px) {
