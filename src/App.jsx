@@ -99,33 +99,31 @@ function App() {
   };
 
   return (
-    <>
-      <Section>
-        <Card className="container">
-          <div className="row">
-            <div className="col-12 col-xl-4">
-              <BgImg>
-                <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
-              </BgImg>
-            </div>
-            <div className="col-12 col-xl-8 d-flex align-items-center justify-content-center">
-              <FormsCont>
-                {currentStep === 1 && <Info />}
-                {currentStep === 2 && <Plan />}
-                {currentStep === 3 && <Addons />}
-                {currentStep === 4 && <Summary />}
-                <StepsNavBtns
-                  handleNextStep={handleNextStep}
-                  handlePreviousStep={handlePreviousStep}
-                  handleConfirm={handleConfirm}
-                  currentStep={currentStep}
-                />
-              </FormsCont>
-            </div>
+    <Section>
+      <Card className="container">
+        <div className="row">
+          <div className="col-12 col-xl-4">
+            <BgImg>
+              <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
+            </BgImg>
           </div>
-        </Card>
-      </Section>
-    </>
+          <div className="col-12 col-xl-8 d-flex align-items-center justify-content-center">
+            <FormsCont>
+              {currentStep === 1 && <Info />}
+              {currentStep === 2 && <Plan />}
+              {currentStep === 3 && <Addons />}
+              {currentStep === 4 && <Summary />}
+              <StepsNavBtns
+                handleNextStep={handleNextStep}
+                handlePreviousStep={handlePreviousStep}
+                handleConfirm={handleConfirm}
+                currentStep={currentStep}
+              />
+            </FormsCont>
+          </div>
+        </div>
+      </Card>
+    </Section>
   )
 }
 
