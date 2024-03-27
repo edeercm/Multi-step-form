@@ -103,6 +103,7 @@ function App() {
       <Card className="container">
         <div className="row">
           <div className="col-12 col-xl-4">
+            <img src={sidebardesk} alt="" />
             <BgImg>
               <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
             </BgImg>
