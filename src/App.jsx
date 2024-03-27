@@ -6,7 +6,7 @@ import Plan from './components/StepTwo/Plan'
 import Addons from './components/StepThree/Addons'
 import Summary from './components/StepFour/Summary'
 import StepsNavBtns from './components/StepsNavBtns'
-import sidebardesk from '../src/assets/images/sidebar-desktop.svg'
+import sidebardesk from '../src/assets/images/sidebar-desk.svg'
 import sidebarmobile from '../src/assets/images/sidebar-mobile.svg'
 import './App.css'
 
