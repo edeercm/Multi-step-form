@@ -9,6 +9,7 @@ const stepsData = [
 ];
 
 const StepsCont = styled.div`
+  position: absolute;
   margin-top: 3rem;
   display: flex;
   gap: 1rem;

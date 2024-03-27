@@ -29,23 +29,9 @@ const Card = styled.div`
   }
 `
 
-const BgImg = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 92.5%;
-  height: 70svh;
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(${sidebardesk});
-
+const BgImg = styled.img` 
   @media (max-width: 991.98px) {
-    align-items: center;
-    width: 100%;
-    height: 25svh;
-    border-radius: 0;
-    background-image: url(${sidebarmobile});
+    content: url(${sidebarmobile});
   }
 `
 
@@ -102,11 +88,9 @@ function App() {
     <Section>
       <Card className="container">
         <div className="row">
-          <div className="col-12 col-xl-4">
-            <img src={sidebardesk} alt="" />
-            <BgImg>
-              <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
-            </BgImg>
+          <div className="col-12 col-xl-4 d-flex justify-content-center">
+            <BgImg src={sidebardesk} alt="" />
+            <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
           </div>
           <div className="col-12 col-xl-8 d-flex align-items-center justify-content-center">
             <FormsCont>
