@@ -19,6 +19,8 @@ figure {
   max-width: 100%;
   width: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 
 p {
@@ -74,14 +76,12 @@ button,
 label {
   font-family: inherit;
   font-size: inherit;
-  -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
   /* opcional */
-  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -100,10 +100,9 @@ body {
   min-height: 100vh;
   font-size: 100%;
   /* opcional */
-  -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eef5ff;
 }
