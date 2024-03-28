@@ -6,8 +6,8 @@ import Plan from './components/StepTwo/Plan'
 import Addons from './components/StepThree/Addons'
 import Summary from './components/StepFour/Summary'
 import StepsNavBtns from './components/StepsNavBtns'
-import bgdesk from '../src/assets/images/sidebar-desk.svg'
-import bgmobile from '../src/assets/images/sidebar-mobile.svg'
+import bgdesk from '../src/assets/images/bg-desk.svg'
+import bgmobile from '../src/assets/images/bg-mobile.svg'
 import './App.css'
 
 const Section = styled.section`
