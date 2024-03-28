@@ -5,9 +5,8 @@ import Info from './components/StepOne/Info'
 import Plan from './components/StepTwo/Plan'
 import Addons from './components/StepThree/Addons'
 import Summary from './components/StepFour/Summary'
+import BackgroundImage from './components/BgImage';
 import StepsNavBtns from './components/StepsNavBtns'
-import bgdesk from '../src/assets/images/bg-desk.svg'
-import bgmobile from '../src/assets/images/bg-mobile.svg'
 import './App.css'
 
 const Section = styled.section`
@@ -26,12 +25,6 @@ const Card = styled.div`
   @media (max-width: 991.98px) {
     padding: 0;
     width: 100%;
-  }
-`
-
-const BgImg = styled.img` 
-  @media (max-width: 991.98px) {
-    content: url(${bgmobile});
   }
 `
 
@@ -89,7 +82,7 @@ function App() {
       <Card className="container">
         <div className="row">
           <div className="col-12 col-xl-4 d-flex justify-content-center">
-            <BgImg src={bgdesk} alt="" />
+            <BackgroundImage />
             <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
           </div>
           <div className="col-12 col-xl-8 d-flex align-items-center justify-content-center">
