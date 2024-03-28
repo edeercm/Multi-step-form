@@ -14,6 +14,7 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 `
 
 const Card = styled.div`
@@ -81,7 +82,7 @@ function App() {
     <Section>
       <Card className="container">
         <div className="row">
-          <div className="col-12 col-xl-4 d-flex justify-content-center">
+          <div className="col-12 col-xl-4 d-flex justify-content-center align-items-center align-items-xl-start">
             <BackgroundImage />
             <StepsButtons handleStepChange={handleStepChange} currentStep={currentStep} />
           </div>
